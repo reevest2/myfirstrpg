@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace myfirstconsolerpg
 {
-    class Class1
+    class Class2
     {
     }
 }

@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace myfirstconsolerpg
 {
-    class Class1
+   public class Player : Character
     {
+        public Player(string _name, int _health, int _attack)
+            :base(_name, _health, _attack)
+        {
+
+        }
+
     }
 }

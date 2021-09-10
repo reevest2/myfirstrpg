@@ -8,14 +8,15 @@ namespace myfirstconsolerpg
 {
     class Program
     {
-        public static Player currentPlayer = new Player();
+       public static Player Hero = new Player("Hero", 25, 4);
         static void Main(string[] args)
         {
             Story.TitleScreen();
             Story.Intro();
             Story.Part1();
-
+            
             Console.ReadLine();
+
         }
     }
 }

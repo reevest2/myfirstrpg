@@ -16,36 +16,7 @@ namespace myfirstconsolerpg
         public static void TitleScreen()
             
         {
-            /*  @@@@@@~~~~~BAD WAY OF DOING THIS~~~~~@@@@@@@
-            //int x = 75; //time to wait before loading next line in ms
-            Console.WriteLine("    ___________________________________________ ");
-            Thread.Sleep(Global.x);
-            Console.WriteLine("   ||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|");
-            Thread.Sleep(Global.x);
-            Console.WriteLine("   ||  ###### ########   #### #######  ########|");
-            Thread.Sleep(Global.x);
-            Console.WriteLine("   || ###  ## #  ###    #####  ###  ## #  ###  |");
-            Thread.Sleep(Global.x);
-            Console.WriteLine("   || ####       ###   ## ###  ###  ##    ###  |");
-            Thread.Sleep(Global.x);
-            Console.WriteLine("   ||  #####     ###  ##  ###  ######     ###  |");
-            Thread.Sleep(Global.x);
-            Console.WriteLine("   ||    ####    ### ########  ### ##     ###  |");
-            Thread.Sleep(Global.x);
-            Console.WriteLine("   || ##  ###    ### ##   ###  ###  ##    ###  |");
-            Thread.Sleep(Global.x);
-            Console.WriteLine("   ||  #####     ### ##   ###  ###  ##    ###  |");
-            Thread.Sleep(Global.x);
-            Console.WriteLine("   ||                 ###            ##        |");
-            Thread.Sleep(Global.x);
-            Console.WriteLine("   ||__________________________________________|");
-            Thread.Sleep(Global.x);
-            Console.WriteLine("    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-            Console.WriteLine(String.Empty);
-            Console.WriteLine(" Press Enter to Start");
-            */
-
-        
+                 
             string startText = @"
  ___________________________________________ 
 ||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
@@ -75,76 +46,53 @@ namespace myfirstconsolerpg
         }
 
         public static void Intro()
-        //Intro to game. Random Mars Volta Lyrics. Get players name as 'playerName'.
+        //Intro to game. Get players name as 'playerName'.
         {
 
-            Console.WriteLine("MYSTERIOUS VOICE:\r\n" +
-                "  It’s been thirteen seconds \r\n" +
-                "  since you all last said \r\n" +
-                "  I’ve become the apparition \r\n" +
-                "  You predicted for my death");
+            Console.WriteLine("EVIL VOICE:\r\n" +
+                "  I'm an Evil voice \r\n" +
+                "  doing Evil things\r\n" +
+                "  like giving monsters gold.  \r\n");
             Console.ReadLine();
 
-            Console.WriteLine("MYSTERIOUS VOICE:\r\n" +
-                "  She said, I\'ll never let them hurt you\r\n" +
-                "  I\'ll never let them in\r\n" +
-                "  What you took from me is mine\r\n" +
-                "  And what is mine I\'ll never give.");
-            Console.ReadLine();
+            Console.WriteLine("EVIL VOICE:\r\n" +
+                "  To beat me you will need to TRAIN\r\n" +
+                "  and get a SWORD\r\n" +
+                "  maybe a SHIELD too.\r\n");
+            Console.WriteLine("  Do you recall your name?\r\n\r\n");
 
-            Console.WriteLine("MYSTERIOUS VOICE\r\n" +
-                "  Do you recall it\'s name? \r\n" 
-                //"  As it suggested beck and call\r\n" +
-                //"  This face and heel\r\n" +
-                //"  Will drag your halo through the mud\r\n\r\n"
-                );
-         
-
-            Console.Write("Enter your name: ");
-            Program.currentPlayer.name = Console.ReadLine();
+                        
+            Console.Write("  Enter your name: ");
+            Program.Hero.name = Console.ReadLine();
             Console.Clear();
 
-            /*
-                Console.WriteLine("MYSTERIOUS VOICE:\r\n" +
-                "  And when " + Program.currentPlayer.name +" sang\r\n" +
-                "  Everyone turned away\r\n" +
-                "  Used to the noose they obey");
-            */
-            string dragYourHalo = @" 
-  This face and heel
-  Will drag your halo through the mud!!!";
+                  
+            string slayMe = @" 
+  Come slay me if you can";
 
-            Console.WriteLine("MYSTERIOUS VOICE: ");
-            Console.Write("  " + Program.currentPlayer.name + "....");
-
-            for (int i = 0; i < dragYourHalo.Length; i++)
+            for (int i = 0; i < slayMe.Length; i++)
             {
-                Console.Write(dragYourHalo[i]);
+                Console.Write(slayMe[i]);
                 Thread.Sleep(50);
             }
-
-               
+            Console.Write(" " + Program.Hero.name);
 
             Console.ReadLine();
-            
+
         }
 
         public static void Part1()
          //Some story or something idk
         {
             Console.Clear();
-            Console.WriteLine("You awake from your sleep.\nThe mysterious voice still lingers in your mind.\nLike is any of this for real, or not\nOr just random song lyrics....\n");
+            Console.WriteLine("A Person approaches");
             Console.ReadLine();
             Console.Clear();
-            Console.WriteLine("You hear a voice. A Person approaches");
+            Console.WriteLine("Person:\n  Is that you?" + " " + Program.Hero.name);
+            Console.WriteLine("Person:\r\n  You came here on time\n  I just hope its not too late\n  ");
             Console.ReadLine();
-            Console.Clear();
-            Console.WriteLine("Person:\n  Is that you?\r\n " + " " + Program.currentPlayer.name);
-            Console.WriteLine("Person:\r\n  You came here on time\n  I just hope its not too late\n  I\'ve seen you at night\n  Biting the frost of silence\n  Can you cure us of this fate\n  Mock the litany in its face");
+            Console.WriteLine("Person:\r\n  Oh no, a monster! And he has my gold!");
             Console.ReadLine();
-            Console.WriteLine("Person:\r\n  Oh no, a monster!");
-            Console.ReadLine();
-            Console.Clear();
             Console.WriteLine("A monster appears. Prepare to battle.");
             Console.ReadLine();
             Console.Clear();
