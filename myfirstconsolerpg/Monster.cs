@@ -6,17 +6,12 @@ using System.Threading.Tasks;
 
 namespace myfirstconsolerpg
 {
-   public class Player : Character
+   public class Monster : Character
     {
-        public Player(string _name, int _health, int _attack)
+        public Monster(string _name, int _health, int _attack)
             : base(_name, _health, _attack)
         {
 
-        }
-
-        public void Slash(Monster target)
-        {
-            target.health -= attack;
         }
     }
 }

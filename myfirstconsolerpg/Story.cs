@@ -55,15 +55,15 @@ namespace myfirstconsolerpg
                 "  like giving monsters gold.  \r\n");
             Console.ReadLine();
 
-            Console.WriteLine("EVIL VOICE:\r\n" +
+            /*Console.WriteLine("EVIL VOICE:\r\n" +
                 "  To beat me you will need to TRAIN\r\n" +
                 "  and get a SWORD\r\n" +
                 "  maybe a SHIELD too.\r\n");
-            Console.WriteLine("  Do you recall your name?\r\n\r\n");
+            Console.WriteLine("  Do you recall your name?\r\n\r\n");*/
 
                         
             Console.Write("  Enter your name: ");
-            Program.Hero.name = Console.ReadLine();
+            Program.player.name = Console.ReadLine();
             Console.Clear();
 
                   
@@ -75,7 +75,7 @@ namespace myfirstconsolerpg
                 Console.Write(slayMe[i]);
                 Thread.Sleep(50);
             }
-            Console.Write(" " + Program.Hero.name);
+            Console.Write(" " + Program.player.name);
 
             Console.ReadLine();
 
@@ -84,16 +84,16 @@ namespace myfirstconsolerpg
         public static void Part1()
          //Some story or something idk
         {
-            Console.Clear();
+         /*   Console.Clear();
             Console.WriteLine("A Person approaches");
             Console.ReadLine();
             Console.Clear();
-            Console.WriteLine("Person:\n  Is that you?" + " " + Program.Hero.name);
+            Console.WriteLine("Person:\n  Is that you?" + " " + Program.player.name);
             Console.WriteLine("Person:\r\n  You came here on time\n  I just hope its not too late\n  ");
             Console.ReadLine();
             Console.WriteLine("Person:\r\n  Oh no, a monster! And he has my gold!");
             Console.ReadLine();
-            Console.WriteLine("A monster appears. Prepare to battle.");
+         */ Console.WriteLine("A monster appears. Prepare to battle.");
             Console.ReadLine();
             Console.Clear();
         }
