@@ -20,7 +20,7 @@ namespace myfirstconsolerpg
         }
         public void DisplayStats()
         {
-            Console.WriteLine(name + "Stats");
+            Console.WriteLine(name + " Stats");
             Console.WriteLine("Health: {0}", health);
             Console.WriteLine("Attack: {0}", attack);
         }
