@@ -19,7 +19,7 @@ namespace myfirstconsolerpg
                  
             string startText = @"
  ___________________________________________ 
-||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~| 
 ||  ###### ########   #### #######  ########|
 || ###  ## #  ###    #####  ###  ## #  ###  |
 || ####       ###   ## ###  ###  ##    ###  |
@@ -54,14 +54,7 @@ namespace myfirstconsolerpg
                 "  doing Evil things\r\n" +
                 "  like giving monsters gold.  \r\n");
             Console.ReadLine();
-
-            /*Console.WriteLine("EVIL VOICE:\r\n" +
-                "  To beat me you will need to TRAIN\r\n" +
-                "  and get a SWORD\r\n" +
-                "  maybe a SHIELD too.\r\n");
-            Console.WriteLine("  Do you recall your name?\r\n\r\n");*/
-
-                        
+                                 
             Console.Write("  Enter your name: ");
             Program.player.name = Console.ReadLine();
             Console.Clear();
@@ -82,18 +75,8 @@ namespace myfirstconsolerpg
         }
 
         public static void Part1()
-         //Some story or something idk
-        {
-         /*   Console.Clear();
-            Console.WriteLine("A Person approaches");
-            Console.ReadLine();
-            Console.Clear();
-            Console.WriteLine("Person:\n  Is that you?" + " " + Program.player.name);
-            Console.WriteLine("Person:\r\n  You came here on time\n  I just hope its not too late\n  ");
-            Console.ReadLine();
-            Console.WriteLine("Person:\r\n  Oh no, a monster! And he has my gold!");
-            Console.ReadLine();
-         */ Console.WriteLine("A monster appears. Prepare to battle.");
+        {  
+            Console.WriteLine("A monster appears. Prepare to battle.");
             Console.ReadLine();
             Console.Clear();
         }
