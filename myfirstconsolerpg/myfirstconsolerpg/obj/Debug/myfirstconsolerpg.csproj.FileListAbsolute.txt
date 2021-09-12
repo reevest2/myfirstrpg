@@ -1,0 +1,7 @@
+A:\myfirstrpg\myfirstconsolerpg\bin\Debug\myfirstconsolerpg.exe.config
+A:\myfirstrpg\myfirstconsolerpg\bin\Debug\myfirstconsolerpg.exe
+A:\myfirstrpg\myfirstconsolerpg\bin\Debug\myfirstconsolerpg.pdb
+A:\myfirstrpg\myfirstconsolerpg\obj\Debug\myfirstconsolerpg.csproj.AssemblyReference.cache
+A:\myfirstrpg\myfirstconsolerpg\obj\Debug\myfirstconsolerpg.csproj.CoreCompileInputs.cache
+A:\myfirstrpg\myfirstconsolerpg\obj\Debug\myfirstconsolerpg.exe
+A:\myfirstrpg\myfirstconsolerpg\obj\Debug\myfirstconsolerpg.pdb
