@@ -12,14 +12,15 @@ namespace myfirstconsolerpg
         public int health;
         public int attack;
         public int speed;
-
-       public Character(string _name, int _health, int _attack , int _speed)
+       
+        public Character(string _name, int _health, int _attack , int _speed)
         {
             name = _name;
             health = _health;
             attack = _attack;
             speed = _speed;
         }
+        
         public void DisplayStats()
         {
             Console.WriteLine(name + " Stats");
@@ -27,14 +28,11 @@ namespace myfirstconsolerpg
             // Console.WriteLine("Attack: {0}", attack);
             // Console.WriteLine("Speed: {0}", speed);
         }
-
+       
         public void HealthRemaining()
         {
             Console.WriteLine(name + " has health remaining: {0}", health);
-                    }
-
+        }
     }
 }
-
-        
 

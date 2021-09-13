@@ -5,6 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace myfirstconsolerpg
+
+    /********************************************
+     * Comment block to add comments to if I feel like it
+     * Made by Trevor Reeves
+     * 
+     * 
+     * 
+     ********************************************/
+     
 {
     class Program
     {
@@ -13,9 +22,9 @@ namespace myfirstconsolerpg
         public static Monster monster1 = new Monster("Evil Voice", 50, 1, 1);
         static void Main(string[] args)
         {
-           // Story.TitleScreen();
-           // Story.Intro();
-           // Story.Part1();
+            Story.TitleScreen();
+            Story.Intro();
+            Story.Part1();
             Battle.startBattle(player, monster);
             Console.WriteLine($"You beat { monster.name }");
             Console.ReadLine();

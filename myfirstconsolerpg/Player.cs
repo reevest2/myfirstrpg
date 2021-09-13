@@ -17,12 +17,14 @@ namespace myfirstconsolerpg
            
         {
         }
-
+        // --------------------Methods that the player can choose from below ------------------------------------------------------
         public void Slash(Monster target)
         {
             target.health -= attack;
             Console.WriteLine($"{name} used Slash and hit {target.name} for {attack} damage");
         }
+
+     
 
         public void Potion()
         {
@@ -42,8 +44,40 @@ namespace myfirstconsolerpg
             }
        
         }
+        // --------------------Player choices for Battle below --------------------------------
+
+        public int Choice()  // need to handle what happens if player inputs a choice thats not 1 or 2
+        {
+            Console.WriteLine("1. Slash");
+            Console.WriteLine("2. Use Potion");
+            string choice = Console.ReadLine();
+            int choiceint;
+            if (int.TryParse(choice, out choiceint))
+            {
+                return choiceint;
+            }
+            else
+            {
+                return 1;
+            }
+
+           
+        }
+
+        public void yourturn(int moveChoice, Monster target)
+        {
+            if (moveChoice == 1)
+            {
+                Slash(target);
+            }
+            else if (moveChoice == 2)
+            {
+                Potion();
+            }
+        }
     }
-}
+} 
+
 
 
 

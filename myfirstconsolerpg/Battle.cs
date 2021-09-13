@@ -36,21 +36,30 @@ namespace myfirstconsolerpg
             while ( player.health > 0 && monster.health > 0)
 
             {
-                Console.WriteLine("characters are waiting for their turn.");
-                Console.ReadLine();
+               
                 AddTurnSpeed(player, monster);
                 if (player.speed >= 3)
                 {
-                    //will change this to be a choice input later. working on turns now. need to balance but logic is there i think.
-                    player.Slash(monster);
+                    //player inputs their move.
+                    player.yourturn(player.Choice(),monster);
                     player.speed -= 3;
                     DisplayHealthRemaining(monster);
+                    Console.WriteLine("=====================");
                 }
                 else if (monster.speed >= 4)
                 {
                     monster.Slash(player);
                     monster.speed -= 4;
                     DisplayHealthRemaining(player);
+                    Console.WriteLine("=====================");
+                }
+                else
+                {
+                    Console.WriteLine($"{ player.name}  {player.speed}");
+                    Console.WriteLine($"{ monster.name}  {monster.speed}");
+                    DisplayTheStats(player, monster);
+                    Console.WriteLine("=====================");
+                    Console.ReadLine();
                 }
 
             }

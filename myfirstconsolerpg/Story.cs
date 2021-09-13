@@ -44,9 +44,9 @@ namespace myfirstconsolerpg
             Console.Clear();
 
         }
-
+        //--------------------Intro to game. Get players name as 'playerName'----------------------------
         public static void Intro()
-        //Intro to game. Get players name as 'playerName'.
+        
         {
 
             Console.WriteLine("EVIL VOICE:\r\n" +
@@ -60,8 +60,7 @@ namespace myfirstconsolerpg
             Console.Clear();
 
                   
-            string slayMe = @" 
-  Come slay me if you can";
+            string slayMe = @" Come slay me if you can";
 
             for (int i = 0; i < slayMe.Length; i++)
             {
@@ -73,7 +72,7 @@ namespace myfirstconsolerpg
             Console.ReadLine();
 
         }
-
+        //--------------------- Rest of the game story below. Name each part like 'Part#()'---------------------
         public static void Part1()
         {  
             Console.WriteLine("A monster appears. Prepare to battle.");
